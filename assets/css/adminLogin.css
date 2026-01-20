@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.bg-image{
+  background: url('webIcon/maap.png') top  center!important;
+  height: 50vh!important;
+  background-size: cover!important;
+  position: relative!important;
+  background-repeat: no-repeat!important;
+  padding-bottom:100%!important;
+  align-items: center!important;
+}
+
+
+#container{
+  padding-top:200x!important;
+  
+}
+
+.card{
+  border-radius:10px!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+
+}
+
+
+.card-header{
+  text-align: center!important;
+}
+
+@media (max-width: 768px) {
+  #container{
+  padding-top:30px!important;
+  
+}
+  
+}

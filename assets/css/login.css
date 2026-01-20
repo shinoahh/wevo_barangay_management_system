@@ -1,0 +1,104 @@
+*{
+  margin:0;
+  padding:0;  
+}
+
+body {
+  background: url('../img/volunteer.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('../img/volunteer.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+#mainContainer{
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+  width: 80%;
+  margin-left: 10%;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100; /* Ensures it takes the full viewport width */
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps background fixed */
+  position: relative;
+  overflow: hidden; /* Prevents extra content from causing scrolling */
+  background-color: rgba(31, 81, 255, 0.5); /* Blue (#1F51FF) with 50% opacity */
+
+}
+
+.swal2-checkbox {
+  display: none !important;
+}
+
+
+
+button{
+  border-radius:20px!important;
+}
+
+label{
+  display:unset!important;
+  text-align: left!important;
+  margin:5px;
+}
+
+
+.card{
+  border-radius:10px!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+
+}
+
+h1{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 50px;
+}
+
+#email, #password, #otp {
+  border: none; /* Remove default border */
+  border-bottom: 1px solid #1F51FF; /* Slightly thicker bottom border */
+  border-radius: 0; /* Remove rounded corners */
+  opacity: .8; /* Set full opacity for better visibility */
+  outline: none !important; /* Remove focus outline */
+  width: 100%; /* Full width */
+  padding: 5px; /* Add spacing */
+  background: transparent; /* Keep background transparent */
+  box-shadow: none !important; /* Remove Bootstrap's default shadow */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for focus effect */
+}
+
+/* Remove hover and focus effects */
+#email:hover, #password:hover, #otp:hover,
+#email:focus, #password:focus, #otp:focus {
+  border-bottom: 1.5px solid #1F51FF; /* Keep the same color */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+label{
+  color:white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#register_container{
+  flex-direction: column;
+}
+

@@ -1,0 +1,231 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0!important;
+    padding:0!important;
+}
+
+table thead tr th{
+  text-align: center;
+  align-items: center;
+}
+
+/* Sidebar */
+#sidebarContainer{
+    width: 200px;
+    height: 100%;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #C0C0C0;
+    z-index:1;
+    padding:0;
+    overflow-y:auto;
+}
+
+#sidebarContainer a{
+  margin:10px;
+  text-decoration:none;
+  color:white;
+  font-weight: 400;
+  font-size:15px;
+}
+
+.adminTitle{
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom:5px;
+  background-color:gray;
+  padding:20px;
+  font-weight:500;
+  font-size:15px;
+}
+
+.main{
+  display:flex!important;
+  flex-direction: column!important;
+}
+
+.sidebar-heading {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.list-group-item {
+    padding: 10px 15px;
+}
+
+#page-content-wrapper {
+    margin-left:250px;
+    padding:0!important;
+    flex:1;
+}
+
+.content-section {
+    display: none;
+    padding-bottom:100vh;
+    margin:0px;
+    padding-top:20px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Buttons */
+.sidebarBtnContainer{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+.btnEmail {
+    color: white;
+    background-color: blue!important;
+    margin: 5px;
+    padding: 6px 11px!important;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.formListButton{
+  display:flex;
+  justify-content:space-around!important;
+}
+
+#btnLogout{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  font-size:20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #sidebarContainer {
+            width:150px;
+            height:100%;
+            background-color:#C0C0C0!important;
+            box-sizing: border-box;
+            position:fixed;
+            padding:0;
+            overflow-x:hidden;
+            overflow-y: hidden;
+    }
+    
+    #page-content-wrapper {
+    margin-left:250px;
+    padding:0!important;
+    flex:1;
+}  
+
+.content-section {
+    padding-bottom:100vh;
+    margin:20px;
+    margin-left:230px;
+    overflow-y:auto;
+}
+    
+    #wrapper{
+      display: flex;
+      flex-direction:column;
+    }
+    
+
+    #page-content-wrapper {
+        margin-left:0;
+        padding:0;
+        width:100%;
+    }
+    
+    .content-section.active {
+    display:block;
+    margin:0;
+    margin-left:170px;
+}
+}
+
+.gallery {
+                          display: flex;
+                          flex-wrap: wrap;
+                          justify-content: center;
+                          gap: 10px;
+                      }
+              
+                      .gallery img {
+                          max-width: 100%; /* Ensure image does not exceed its container */
+                          height: auto; /* Maintain aspect ratio */
+                          border-radius: 5px; /* Optional: Add rounded corners */
+                          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+                      }
+                    
+                    button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+th{
+
+  align-items:center!important;
+  text-align:center!important;
+  background-color:#36454F!important;
+  color:white!important;
+  padding:4px!important;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+}
+
+.btnEmail {
+    color: white;
+    background-color: blue!important;
+    margin: 5px;
+    padding: 6px 11px!important;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.formListButton{
+  display:flex;
+  justify-content:space-around!important;
+}
+
+.floating-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.floating-form h3 {
+    margin-top: 0;
+}
+
+.floating-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
